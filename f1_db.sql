@@ -1,5 +1,3 @@
-CREATE DATABASE f1;
-
 USE f1;
 
 -- 1. Teams Table
@@ -88,7 +86,7 @@ VALUES
     ('Circuit Gilles Villeneuve', 'Montreal, Canada', 4.361),
     ('Red Bull Ring', 'Spielberg, Austria', 4.318),
     ('Silverstone Circuit', 'Silverstone, UK', 5.891),
-    ('Hungaroring', 'Mogyoród, Hungary', 4.381),
+    ('Hungaroring', 'Mogyorï¿½d, Hungary', 4.381),
     ('Spa-Francorchamps', 'Stavelot, Belgium', 7.004),
     ('Circuit Zandvoort', 'Zandvoort, Netherlands', 4.259),
     ('Monza', 'Monza, Italy', 5.793),
