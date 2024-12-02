@@ -1,3 +1,4 @@
+
 USE f1;
 
 -- 1. Teams Table
@@ -171,9 +172,10 @@ CREATE TABLE RaceResults (
     Position INT,
     Points INT,
     FOREIGN KEY (RaceID) REFERENCES Races(RaceID) ON DELETE CASCADE,
-    FOREIGN KEY (DriverID) REFERENCES Drivers(DriverID) ON DELETE CASCADE,
-    FOREIGN KEY (ConstructorID) REFERENCES Constructors(ConstructorID) ON DELETE CASCADE
+    FOREIGN KEY (DriverID) REFERENCES Drivers(DriverID) ON DELETE NO ACTION,
+    FOREIGN KEY (ConstructorID) REFERENCES Constructors(ConstructorID) ON DELETE NO ACTION
 );
+
 
 INSERT INTO RaceResults (RaceID, DriverID, ConstructorID, Position, Points)
 VALUES
@@ -198,6 +200,7 @@ VALUES
     (1, 19, 10, 19, 0),
     (1, 20, 10, 20, 0);
 
+select * from RaceResults
 
 -- 7. Driver Standing
 CREATE TABLE DriverStandings (
